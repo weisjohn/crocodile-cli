@@ -1,0 +1,9 @@
+{
+  "extends": "crocodile",
+  "env": {
+    "shelljs": true
+  },
+  "rules": {
+    "max-len": 0
+  }
+}

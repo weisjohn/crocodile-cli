@@ -1,0 +1,64 @@
+{
+  "name": "crocodile",
+  "description": "CrocodileJS command line utility for starting new projects",
+  "version": "1.0.0",
+  "author": "Lucas Bento <lucas.bsilva@outlook.com>",
+  "bin": {
+    "crocodile": "./bin/crocodile"
+  },
+  "bugs": {
+    "url": "https://github.com/crocodilejs/crocodile-cli/issues"
+  },
+  "contributors": [
+    {
+      "name": "Nick Baugh",
+      "email": "niftylettuce@gmail.com"
+    }
+  ],
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "commander": "^2.9.0",
+    "elegant-spinner": "^1.0.1",
+    "import-dir": "0.0.1",
+    "log-update": "^1.0.2",
+    "opn": "^4.0.2",
+    "rimraf": "^2.5.3",
+    "shelljs": "^0.7.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.11.4",
+    "babel-preset-crocodile": "^1.0.0",
+    "eslint-config-crocodile": "^1.0.0",
+    "npm-watch": "^0.1.5"
+  },
+  "homepage": "https://github.com/crocodilejs/crocodile-cli#readme",
+  "keywords": [
+    "boilerplate",
+    "cli",
+    "framework",
+    "glazed",
+    "crocodile",
+    "crocodilejs",
+    "mvc",
+    "jquery",
+    "koa",
+    "yeoman"
+  ],
+  "license": "MIT",
+  "main": "./lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crocodilejs/crocodile-cli.git"
+  },
+  "watch": {
+    "compile": "src/**/*.js"
+  },
+  "scripts": {
+    "compile": "rimraf ./lib && babel -d lib/ src/",
+    "lint": "eslint .",
+    "postinstall": "crocodile",
+    "prepublish": "npm run test && npm run compile",
+    "test": "npm run lint",
+    "watch": "npm-watch"
+  }
+}
