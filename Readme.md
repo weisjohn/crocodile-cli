@@ -5,7 +5,7 @@
 [![MIT License][license-image]][license-url]
 [![Standard JS Style][standard-image]][standard-url]
 
-> This is a simple command-line tool to generate projects using [Crocodile][crocodile-url] (it's very similar to a project generator like [Yeoman][yeoman], but simpler).
+> This is a simple command-line tool to generate and upgrade projects using [Crocodile][crocodile-url] (it's very similar to a project generator like [Yeoman][yeoman], but simpler).
 
 
 ## Install
@@ -19,20 +19,39 @@ npm install -g crocodile
 ```bash
 crocodile
 
+
+          `.-::::-.`
+      `-+ooooooooooo+/`
+     :osso++//+ssooooos:.
+    +s/.     -sssoo+ooosso-
+   :o`      :yso++++o+ooyso
+   /`      `:yo+++++ooosyys-
+         -/++oo+++oooosy/...
+     ./osss+++oo+oossosso/
+     ``/oo+ssoosoossossss/
+     ./+++ooossysso:.soo
+    :ooooo/:-:--.    +oo-
+    `--.             `.`
+
+
+🐊  CrocodileJS is a Node MVC framework that lets you chew apart JavaScript - https://crocodilejs.com
+
+
   Usage:  [options] [command]
+
+
+  Commands:
+
+    chew <dir>  Create a new CrocodileJS project
+    upgrade     Upgrade your existing CrocodileJS project
+    issues      Open GitHub issues for CrocodileJS
+    docs        Read CrocodileJS documentation on GitHub
+    rock        I wonder what this does?
 
   Options:
 
     -h, --help     output usage information
     -V, --version  output the version number
-
-
-
-  Commands:
-
-    chew   <dir>  Create a new Crocodile project
-    issues        Open GitHub issues for Crocodile
-    docs          Read Crocodile documentation on GitHub
 ```
 
 

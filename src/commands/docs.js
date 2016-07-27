@@ -3,7 +3,6 @@ import chalk from 'chalk';
 import opn from 'opn';
 
 export default () => {
-  console.log(chalk.green('Opening docs...'));
-  opn('https://github.com/crocodilejs/crocodile/#readme');
+  opn('https://github.com/crocodilejs/crocodile-node-mvc-framework/#readme');
   exit(0);
 };
