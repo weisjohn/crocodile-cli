@@ -1,5 +1,4 @@
 
-import chalk from 'chalk';
 import opn from 'opn';
 
 export default () => {
