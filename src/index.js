@@ -3,6 +3,8 @@ import 'shelljs/global';
 import program from 'commander';
 import importDir from 'import-dir';
 import chalk from 'chalk';
+import updateNotifier from 'update-notifier';
+
 import pkg from '../package.json';
 import CROCODILE from '../.crocodile';
 
@@ -34,6 +36,11 @@ program
   .action(commands.docs);
 
 program
+  .command('license')
+  .description('Purchase a commercial CrocodileJS license')
+  .action(commands.license);
+
+program
   .command('rock')
   .description('I wonder what this does?')
   .action(commands.rock);
@@ -43,3 +50,4 @@ if (process.argv.length <= 2)
 else
 	program.parse(process.argv);
 
+updateNotifier({ pkg }).notify();
