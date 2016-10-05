@@ -58,8 +58,8 @@
   "scripts": {
     "compile": "rm -rf ./lib && babel -d lib/ src/",
     "lint": "eslint .",
-    "postinstall": "crocodile",
-    "prepublish": "npm run test && npm run compile",
+    "postinstall": "./bin/crocodile",
+    "preinstall": "npm run compile",
     "test": "npm run lint"
   }
 }
